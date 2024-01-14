@@ -72,7 +72,9 @@ while (x < list.length) {
 
 
 // Checkpoint 2.3 What is the difference between do while and while loop?
-// Answer: 
+// Answer:
+// A do while loop will always run the code inside at least once and then checks the condition.
+// Meanwhile a while loop will check the condition first and decides whether to run the code.
 
 
 
@@ -94,6 +96,10 @@ list.forEach((element) => console.log(element));
 
 // Checkpoint 2.2 When should you use for of, for in, or .forEach loops? Try researching the answer
 // Answer: 
+// For of is used if you want to iterate in sequential order and access the element itself.
+// For in is used if you want to access it via index, to which you can also use for other purposes.
+// For each is generally not recommended as it will run through the entire loop without any way to stop it.
+
 
 // TODO 2.10 Use the try and catch block to catch division by zero errors in the code below.
 // In the finally block, simulate cleaning up resources by displaying "cleaning up resources"
