@@ -96,9 +96,9 @@ list.forEach((element) => console.log(element));
 
 // Checkpoint 2.2 When should you use for of, for in, or .forEach loops? Try researching the answer
 // Answer: 
-// For of is used if you want to iterate in sequential order and access the element itself.
+// For of is used if you want to iterate in sequential order and access the element itself, on iterable objects.
 // For in is used if you want to access it via index, to which you can also use for other purposes.
-// For each is generally not recommended as it will run through the entire loop without any way to stop it.
+// For each is generally not recommended as it used to run through every element and executes a callback function.
 
 
 // TODO 2.10 Use the try and catch block to catch division by zero errors in the code below.
