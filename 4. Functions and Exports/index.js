@@ -60,7 +60,7 @@ console.log(modifyArray(numbers,increOne))
 // Then, import and call the add method here and display the value of the PI constant
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
-import { add, PI } from './mathUtils';
+import { add, PI } from './mathUtils.js';
 
 console.log(add(3,4))
 console.log(PI)
