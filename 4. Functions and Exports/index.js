@@ -18,6 +18,9 @@ greet("Joshua")
 
 // Checkpoint 4.1 What is the difference between a function declaration and a function expression?
 // Answer: 
+// Declaring a function lets you use the function at a later point but in a function expression you immedietely assign that function to that part of the code only as if it was a variable or value.
+// In function expressions you can omit putting a function name to declare an anonymous functions, whereas in function declarations you are required to.
+
 
 // Todo 4.2 Declare a function expression named 'calculateArea' that takes the length and width of a rectangle and returns its area
 // Then, Call the 'calculateArea' function with any length and width as arguments
@@ -33,8 +36,10 @@ console.log(calculateArea(9,86))
 
 // Checkpoint 4.2 What is a callback function? Provide an example.
 // Answer: 
-// A callback function is a function passed into another function as an argument,
-// which is then invoked inside the outer function to complete some kind of routine or action. 
+// A callback function is a function that is passed into another function as an argument.
+// This allows a function to call another function before it starts running the rest of the function.
+
+// const positiveNum = removeNegativeNum(numberArray, (x) => x >= 0); // is an example of a callback function
 
 
 // Todo 4.3 Declare a higher-order function named 'modifyArray' that takes an array and a function as parameters. The function should modify each element in the array using the provided function and return the modified array.
@@ -80,5 +85,16 @@ console.log(wordString + checkPalindrome(wordString))
 // Checkpoint 4.3 What does the require function and module.exports variable do?
 // Should we use it over the import and export keywords? Why? Research your answer.
 // Answer: 
-// The require function is another way to import modules in JavaScript
-// The module.exports is another way to export modules in JavaScript
+
+// The require function is used to managing dependencies and modularizing code.
+// It is another way to import modules or files in JavaScript.
+// Similar to export, The module.exports is another way to export modules in JavaScript
+
+// We should use the require function and module.exports over import and export keyword for older programs. 
+// Using the require function, you can have a dynamic loading where the module name isn't pre-determined and is synchornous. Loaded one by one.
+// It is backwards compatible, as ES6 (import and export keywords) aren't able to do that. 
+
+// However as ES6 modules are starting to take over with providing a better performance than CommonJS.
+// Which is a now limiting factor of using CommonJS in newer programs.
+// The usage of require and module.exports, isn't favorable with newer programs as import and export keywords provide a feature to selectively load only the things you require.
+// This saves more space in the program and makes it perform better.
