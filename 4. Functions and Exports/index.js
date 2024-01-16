@@ -70,6 +70,15 @@ console.log(PI)
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
 
+import checkPalindrome from './isPalindrome.js'
+
+var wordString = 'Level'
+console.log(wordString + checkPalindrome(wordString))
+wordString = 'Stage'
+console.log(wordString + checkPalindrome(wordString))
+
 // Checkpoint 4.3 What does the require function and module.exports variable do?
 // Should we use it over the import and export keywords? Why? Research your answer.
 // Answer: 
+// The require function is another way to import modules in JavaScript
+// The module.exports is another way to export modules in JavaScript
